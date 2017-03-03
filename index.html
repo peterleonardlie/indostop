@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Indostop</title>
+<link rel="shortcut icon" type="image/png" href="img/indostop.png"/>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#gadoAndGrill").click(function(){
+		$("#nasilemak-content").hide();
+		$("#introduction").hide();
+        $("#gadoandgrill-content").show("fast",function(){
+      		$("html, body").animate({ scrollTop: 975 }, "fast");
+  return false;
+		});
+    });
+});
+
+$(document).ready(function(){
+    $("#nasiLemak").click(function(){
+		$("#gadoandgrill-content").hide();
+		$("#introduction").hide();
+        $("#nasilemak-content").show("fast",function(){
+      		$("html, body").animate({ scrollTop: 975 }, "fast");
+  return false;
+		});
+    });
+});
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 300) {
+    $('#js-scroll').fadeIn();
+  } else {
+    $('#js-scroll').fadeOut();
+  }
+});
+
+$(document).ready(function(){
+	$("a[href='#top']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="main">
+		<div class="logo">
+        	<img src="img/indostop-logo.png" alt="logo"  height="148" />
+        </div>
+		<div class="container">
+        <div id="content">
+            <div id="picture">
+            	<div id="picture1">
+                	<div id="nasiLemak">
+                        
+                	</div>
+                    
+                </div>
+                <div id="picture2">
+                	<div id="gadoAndGrill">
+                        <img src="img/gadoandgrill.jpg" width="340" />
+                        <img src="img/gadoandgrill-logo.png" id="logo" />
+                	</div>
+                	<span id="gadoandgrill-text" style="font-size:17px;"><b>"Serving you Authentic Indonesian Grill!"</b></span>
+                </div>
+                <div id="picture3">
+	       			<div id="miniMart">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+	</div>
+    <div class="about">
+        <div class="divider">
+        <img src="img/test.gif" height="150" />
+        </div>
+        <div id="about-content">
+        	<div id="introduction">
+            	<p align="center">Welcome to Indostop!</p>
+                <p align="center">Click the Picture above to know more about the store.</p>
+            </div>
+            <div id="gadoandgrill-content">
+                <div id="pic" style="float:left;">
+                
+                </div>
+                <div id="text" style="float:left; margin-left:20px;">
+                <span id="header">History</span><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur rutrum mollis. Maecenas pretium a justo in ornare. Proin est odio, facilisis eu nisl sed, euismod fringilla dolor. Ut nec lobortis elit, nec mollis ligula. Cras eu neque eu lectus dignissim ullamcorper. Aenean vel est pretium, tristique leo ac, imperdiet metus..<br />
+                <span id="header">Speciality</span><br />
+                <ul>
+                <li>Curabitur congue lorem consequat pulvinar ultricies.</li>
+                <li>Phasellus massa ligula, rhoncus ut orci eu, mattis pretium libero.</li>
+                <li>Cras venenatis nibh purus, in fringilla enim vestibulum nec.</li>
+                </ul>
+                <div class="button-holder"> <a href="#" class="custom-button light">Visit website</a></div>
+                </div>
+            </div>
+            <div id="nasilemak-content">
+                <div id="pic" style="float:left;">
+                
+                </div>
+                <div id="text" style="float:left; margin-left:20px;">
+                Nasi lemak.
+                <div class="button-holder"> <a href="#" class="custom-button light">Visit website</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+		<div id="social">
+            <a href="#"><img src="img/fb_button.png" width="200" id="facebook" /></a>
+            <a href="#"><img src="img/shopping_button.png" width="200" id="qoo10" /></a>
+            <a href="#"><img src="img/foodpanda.png" width="180" id="foodpanda" /></a>
+        </div>
+        <div id="end-note"></div>
+        <div id="endnote-text">
+        	© IndoStop - Your Indonesian Minimart
+        </div>
+    	</div>
+    <a href="#top" id="js-scroll">
+    	<i class="fa fa-arrow-circle-o-up"></i>
+    </a>    
+    </div>
+</div>
+</body>
+</html>
